@@ -1,16 +1,22 @@
+:root {
+    --light-color: #eee;
+    --dark-color: black;
+    --colorful: rgb(179, 83, 83);
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 nav {
-    background-color: rgb(83, 83, 179);
+    background-color: var(--colorful);
     padding: 2px;
     width: 400px;
     margin: 0 auto;
 }
 
 nav a {
-    color: white;
+    color: var(--light-color);
     display: block;
     padding: 10px;
 }
@@ -23,7 +29,7 @@ main {
 }
 
 main h1 {
-    color: rgb(0, 0, 0);
+    color: var(--dark-color);
     text-align: center;
 }
 
@@ -35,9 +41,9 @@ main img {
     width: 150px;
     display: block;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--dark-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--light-color);
     margin: 0 auto;
 }
 
@@ -48,10 +54,10 @@ p {
 aside {
     width: 20rem;
     margin: 20px auto;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid var(--dark-color);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--light-color);
+    color: var(--dark-color);
     text-align: center;
 }
 
@@ -62,6 +68,6 @@ aside img {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--dark-color);
     text-align: center;
 }
