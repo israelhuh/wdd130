@@ -1,7 +1,14 @@
 :root {
     --light-color: #eee;
     --dark-color: black;
+    --middle-color: rgb(184, 182, 182);
     --colorful: rgb(179, 83, 83);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -38,6 +45,7 @@ main h2 {
 }
 
 main img {
+    float: right;
     width: 150px;
     display: block;
     height: auto;
@@ -49,17 +57,14 @@ main img {
 
 p {
     padding: 0;
+    clear: both;
 }
 
 aside {
     width: 20rem;
-    margin: 20px auto;
-    border: 1px solid var(--dark-color);
-    padding: 1rem;
-    background-color: var(--light-color);
-    color: var(--dark-color);
     text-align: center;
 }
+
 
 aside img {
     width: 200px;
@@ -70,4 +75,15 @@ footer {
     margin-top: 15px;
     border-top: 1px solid var(--dark-color);
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 25px auto;
+    border: 1px solid var(--dark-color);
+    padding: 1rem;
+    background-color:var(--middle-color);
+    color: var(--light-color);
+
 }
