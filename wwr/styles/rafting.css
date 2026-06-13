@@ -192,7 +192,6 @@ footer p {
     text-align: center;
     border: 1px solid #000;
     background-color: #f9f9f9;
-    /* Soluciona la alerta de contraste AA */
     margin-bottom: 20px;
     padding: 20px;
 }
