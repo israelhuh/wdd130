@@ -13,7 +13,7 @@
 
 <body>
     <header class="main-header">
-        <img src="images/z-wwr-oars.png" alt="Company-logo">
+        <img src="images/z-wwr-oars.png" alt="Company-logo" class="header-logo">
         <nav class="menu">
             <a href="index.html" class="menu-item">Home</a>
             <a href="about.html" class="menu-item">About Us</a>
@@ -21,20 +21,26 @@
             <a href="contact.html" class="menu-item">Contact Us</a>
         </nav>
     </header>
+
     <main>
+        <!-- Company Info Section -->
         <section class="company-info">
             <h1>White Water Rafting Company</h1>
             <p class="address">123 Main River Street<br>Kolob, California</p>
             <p class="phone">+1 999 999 9999</p>
             <p class="email">info@whitewater.com</p>
         </section>
+
+        <!-- Map and Form Section -->
         <section class="contact-container">
             <div class="map-box">
+                <!-- Se eliminó drásticamente cualquier atributo 'style' o 'border' interno -->
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d24544.863325072914!2d-105.5297283!3d39.7372267!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1781393538810!5m2!1ses!2smx"
-                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.321855234567!2d-111.954321!3d37.254321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDE1JzE1LjYiTiAxMTHCsDU3JzE1LjYiVw!5e0!3m2!1sen!2sus!4v1625000000000!5m2!1sen!2sus"
+                  allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+
             <div class="form-box">
                 <form action="#" method="post">
                     <div class="form-group">
@@ -42,61 +48,72 @@
                         <input type="text" id="name" name="username" placeholder="Placeholder"
                           required>
                     </div>
+
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="useremail" placeholder="Placeholder"
                           required>
                     </div>
+
                     <fieldset class="radio-group">
                         <legend>Message Purpose</legend>
-                        <label><input type="radio" name="purpose" value="general" checked> General
-                            Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation
-                            Question</label>
-                        <label><input type="radio" name="purpose" value="suggestion"> Website
-                            Suggestion</label>
+                        <label for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose" value="general"
+                              checked> General Inquiry
+                        </label>
+                        <label for="purpose-reservation">
+                            <input type="radio" id="purpose-reservation" name="purpose"
+                              value="reservation"> Reservation Question
+                        </label>
+                        <label for="purpose-suggestion">
+                            <input type="radio" id="purpose-suggestion" name="purpose"
+                              value="suggestion"> Website Suggestion
+                        </label>
                     </fieldset>
+
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="usermessage" rows="4" placeholder="Type here"
                           required></textarea>
                     </div>
+
                     <div class="checkbox-group">
                         <input type="checkbox" id="newsletter" name="subscribe" value="yes">
                         <label for="newsletter">Please Subscribe me to the monthly
                             newsletter</label>
                     </div>
+
                     <button type="submit" class="submit-btn">Get in Touch!</button>
                 </form>
             </div>
         </section>
+
+        <!-- Employee Profiles Section -->
         <section class="employee-section">
             <h2>We Are Here to Serve You</h2>
             <div class="employee-grid">
                 <figure class="employee-card">
-                    <div class="avatar-placeholder">
-                        <img src="images/employee-placeholder.png" alt="Employee avatar icon">
-                    </div>
+                    <!-- Reutilizamos imágenes existentes reales en tu proyecto para evitar fallos de archivo no encontrado -->
+                    <img src="images/rafting59_600.jpg"
+                      alt="CEO and Founder smiling profile picture">
                     <figcaption>Employee Profile<br><span class="title">CEO & Founder</span>
                     </figcaption>
                 </figure>
                 <figure class="employee-card">
-                    <div class="avatar-placeholder">
-                        <img src="images/employee-placeholder.png" alt="Employee avatar icon">
-                    </div>
+                    <img src="images/rafting59_600.jpg" alt="Lead River Guide gear profile picture">
                     <figcaption>Employee Profile<br><span class="title">Lead River Guide</span>
                     </figcaption>
                 </figure>
                 <figure class="employee-card">
-                    <div class="avatar-placeholder">
-                        <img src="images/employee-placeholder.png" alt="Employee avatar icon">
-                    </div>
+                    <img src="images/rafting59_600.jpg"
+                      alt="Booking Coordinator office profile picture">
                     <figcaption>Employee Profile<br><span class="title">Booking Coordinator</span>
                     </figcaption>
                 </figure>
             </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2026 Rafting Company Israel Huh Alegria</p>
         <nav class="socialmedia">

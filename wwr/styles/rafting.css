@@ -190,9 +190,11 @@ footer p {
 
 .company-info {
     text-align: center;
-    border: none !important;
-    background-color: transparent !important;
-    margin-bottom: 10px;
+    border: 1px solid #000 !important;
+    background-color: #f9f9f9 !important;
+    /* Soluciona la alerta de contraste AA */
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .company-info h1 {
@@ -201,11 +203,11 @@ footer p {
     color: var(--primary-color);
     opacity: 1;
     padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .company-info p {
-    margin: 4px 0;
+    margin: 6px 0;
     padding: 0;
 }
 
@@ -214,12 +216,16 @@ footer p {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     align-items: start;
+    background-color: #f9f9f9;
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .map-box iframe {
     width: 100%;
     height: 380px;
-    border: 1px solid #ccc;
+    border: 0;
 }
 
 .form-box form {
@@ -231,12 +237,11 @@ footer p {
 .form-group {
     display: grid;
     grid-template-columns: 100px 1fr;
-    align-items: start;
+    align-items: center;
 }
 
 .form-group label {
     font-weight: bold;
-    padding-top: 6px;
 }
 
 .form-group input,
@@ -259,8 +264,6 @@ footer p {
 .radio-group legend {
     font-weight: bold;
     grid-column: 1;
-    float: left;
-    padding-top: 2px;
 }
 
 .radio-group label {
@@ -288,11 +291,18 @@ footer p {
     border: 1px solid #767676;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    text-align: center;
 }
 
 .submit-btn:hover {
     background-color: #cccccc;
+}
+
+.employee-section {
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
 .employee-section h2 {
@@ -302,37 +312,33 @@ footer p {
 
 .employee-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    justify-items: center;
 }
 
 .employee-card {
-    text-align: center;
     margin: 0;
-    padding: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
 }
 
-.avatar-placeholder {
-    width: 100px;
-    height: 100px;
-    background-color: #e0e0e0;
+.employee-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 10px auto;
-}
-
-.avatar-placeholder img {
-    width: 50px;
-    height: 50px;
-    opacity: 0.6;
+    display: block;
+    margin: 0 auto 12px auto;
 }
 
 .employee-card figcaption {
     font-size: 15px;
+    font-family: var(--body-font);
+    color: var(--accent1-color);
     font-weight: bold;
+    line-height: 1.4;
 }
 
 .employee-card .title {
