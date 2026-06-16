@@ -7,7 +7,7 @@
     <title>Israel Huh | Poll Form</title>
     <meta name="Table" content="This is a web page created to try tables">
     <meta name="author" content="Israel Huh">
-    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
@@ -63,6 +63,44 @@
                 </tr>
             </tfoot>
         </table>
+
+        <form>
+            <h2>Contact information</h2>
+            <div class="form-item column2">
+                <label for="fullname">Enter you fullname:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-item column2">
+                <label for="useremai">Enter you email:</label>
+                <input type="email" id="useremai" name="useremai" required>
+            </div>
+
+            <h2>Questions</h2>
+            <div class="formn-item column1">
+                <label for="quantity">What is your favorite internet browser?</label>
+                <select name="quantity" id="quantity">
+                    <option value="chorme">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="edge">Edge</option>
+                    <option value="brave">Brave</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="formn-item column1">
+                <label for="pet">Do you have a pet?</label>
+                <input type="checkbox" id="pet" name="pet" required>
+            </div>
+
+            <div class="formn-item column1">
+                <label for="feedback">List the places you have lived</label>
+                <textarea name="feedback" id="feedback" rows="4"
+                  placeholder="Stillwater Florida, Ansterdam Netherlands, Timbuktu Mali"></textarea>
+            </div>
+
+            <button type="submit">Sumbit poll</button>
+        </form>
     </main>
     <footer>
 

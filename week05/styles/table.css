@@ -1,8 +1,41 @@
 * {
-    width: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: darkred;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+
+nav a:hover {
+    background-color: rgb(190, 189, 189);
+}
+
+main h1 {
+    max-width: 840px;
+    margin: 20px auto;
+    text-align: center;
 }
 
 table {
+    margin: 10px auto;
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
     letter-spacing: 1px;
@@ -20,3 +53,5 @@ tfoot tr {
     background-color: rgb(0 0 0);
     color: white;
     font-weight: 700;
+    text-align: center;
+}
