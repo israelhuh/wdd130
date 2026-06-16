@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #055a05;
+    --primary-color: #0b240b;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
@@ -354,6 +354,135 @@ footer p {
 }
 
 .employee-card .title {
+    font-size: 13px;
+    font-weight: normal;
+    color: #555555;
+}
+
+.newsletter-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: start;
+    background-color: #f9f9f9;
+    border: 1px solid #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.call-action {
+    text-align: center;
+    border: 1px solid #000000;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: larger;
+}
+
+.call-action img {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+.call-action img:hover {
+    box-shadow: 10px 20px 10px #afaeae;
+}
+
+.content-section {
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.content-card {
+    margin: 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+
+.content-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 12px auto;
+}
+
+.content-card figcaption {
+    font-size: 15px;
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.content-card .title {
+    font-size: 13px;
+    font-weight: normal;
+    color: #555555;
+}
+
+.trips-content {
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.trips-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.trips-content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.trips-content-card {
+    margin: 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+
+.trips-content-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 12px auto;
+}
+
+.trips-content-card figcaption {
+    font-size: 15px;
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.trips-content-card .title {
     font-size: 13px;
     font-weight: normal;
     color: #555555;
