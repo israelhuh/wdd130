@@ -102,8 +102,7 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: rgba(38, 70, 83, 0.85);
     color: #ffffff;
 }
 
@@ -508,7 +507,7 @@ footer p {
     font-family: var(--body-font);
 }
 
-.trips-table th, 
+.trips-table th,
 .trips-table td {
     padding: 12px 15px;
     text-align: left;
