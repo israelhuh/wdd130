@@ -487,3 +487,50 @@ footer p {
     font-weight: normal;
     color: #555555;
 }
+
+.trips-table-section {
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.trips-table-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #ffffff;
+    font-family: var(--body-font);
+}
+
+.trips-table th, 
+.trips-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+
+.trips-table th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+
+.trips-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.trips-table tbody tr:hover {
+    background-color: #e9c46a33;
+    transition: background-color 0.3s ease;
+}
+
+.trips-table td strong {
+    color: var(--accent1-color);
+}
